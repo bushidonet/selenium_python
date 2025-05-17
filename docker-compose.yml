@@ -1,0 +1,20 @@
+services:
+  selenium_chrome:
+    image: selenium/standalone-chrome:123.0
+    platform: linux/amd64
+    ports:
+      - "4444:4444"
+    shm_size: 2g
+
+  api:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    depends_on:
+      - selenium_chrome
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./app:/app
+    environment:
+      - FLASK_ENV=development

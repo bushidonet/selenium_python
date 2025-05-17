@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de logs y caché
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+.cache/
+.pytest_cache/
+
+# Configuraciones locales
+*.env
+.env.*
+*.local
+
+# Archivos de VS Code / PyCharm
+.vscode/
+.idea/
+
+# Archivos de distribución
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Selenium / descargas automáticas
+downloads/
+*.crdownload
+
+# Otros
+.DS_Store
+Thumbs.db
